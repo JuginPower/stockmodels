@@ -38,7 +38,7 @@ class CrawlerFloat(Crawler):
         """Return page source content from module requests or en errorstring."""
 
         error_string = ""
-        items = self._urlmodel.get_url_active_items()
+        items = self._urlmodel.get_all_items(True)
 
         for item in items:
 
